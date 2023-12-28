@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678351477665",
+    "project_id": "flowerclassification-7fae1",
+    "storage_bucket": "flowerclassification-7fae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678351477665:android:e62ea1451c2a658b4a49e0",
+        "android_client_info": {
+          "package_name": "com.example.datn_nhandienhoa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ4KRfmW45VKQWvygGrSNsjpaNwr8JVhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

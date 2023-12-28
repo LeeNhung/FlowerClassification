@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".ListFlowersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbarRL"
+        android:background="@drawable/shape_toolbar02">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:src="@drawable/ic_back_24"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="Danh sách các loại hoa"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/searchET"
+        android:layout_below="@id/toolbarRL"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:hint="Search"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_search_24"
+        android:textColorHint="@color/gray01"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/flowerRCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchET"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-5dp"
+        android:padding="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_flowers" />
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/white"> &lt;!&ndash; Thay đổi màu sắc ở đây &ndash;&gt;-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/search"-->
+<!--        android:src="@drawable/ic_search_24"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:contentDescription="TODO" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/takePicture"-->
+<!--        android:src="@drawable/ic_camera_24"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:contentDescription="TODO" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/launchGallery"-->
+<!--        android:src="@drawable/ic_library_24"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:contentDescription="TODO" />-->
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

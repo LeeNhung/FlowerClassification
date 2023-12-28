@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlowerDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbarRL"
+        android:background="@drawable/shape_toolbar02">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:src="@drawable/ic_back_24"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_marginTop="8dp"
+            android:text="Hoa Hướng Dương"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_below="@id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_below="@id/toolbarRL"
+                android:layout_centerHorizontal="true"
+                android:padding="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Giới thiệu"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/txtorigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dòng 1\nDòng 2\nDòng 3"
+                android:layout_marginLeft="14dp"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Đặc điểm"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/txtdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dòng 1\nDòng 2\nDòng 3"
+                android:layout_marginLeft="14dp"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Công dụng"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/txtutility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dòng 1\nDòng 2\nDòng 3"
+                android:layout_marginLeft="14dp"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+    </ScrollView>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/white"> &lt;!&ndash; Thay đổi màu sắc ở đây &ndash;&gt;-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/search"-->
+<!--            android:src="@drawable/ic_search_24"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:contentDescription="TODO" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/takePicture"-->
+<!--            android:src="@drawable/ic_camera_24"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:contentDescription="TODO" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/launchGallery"-->
+<!--            android:src="@drawable/ic_library_24"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:contentDescription="TODO" />-->
+<!--    </LinearLayout>-->
+
+</RelativeLayout>
